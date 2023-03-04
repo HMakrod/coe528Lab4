@@ -36,10 +36,10 @@ public void read() {
 try 
 {
     // pass the path to the file as a parameter
-File homedir = new File(System.getProperty("user.home"));
-File fileToRead = new File(homedir, "NetBeansProjects/coe528Lab4/record.txt");
-//File file = new File("/home/hmakrod/java/record.txt");
-Scanner sc = new Scanner(fileToRead);
+//File homedir = new File(System.getProperty("user.home"));
+//File fileToRead = new File(homedir, "NetBeansProjects/coe528Lab4/record.txt");
+File file = new File("record.txt");
+Scanner sc = new Scanner(file);
  
 while (sc.hasNextLine())
 System.out.println(sc.nextLine());
